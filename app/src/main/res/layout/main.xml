@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/token"
+		android:hint="Your token. | Required."
+		android:maxLines="1"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_below="@id/token"
+		android:id="@+id/name"
+		android:hint="Name. | Required."
+		android:maxLines="1"/>
+
+	<Switch
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/name"
+		android:id="@+id/show_start"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/name"
+		android:layout_toRightOf="@id/show_start"
+		android:text="Set showcase of playtime."/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_below="@id/show_start"
+		android:id="@+id/state"
+		android:hint="State. | Not Required."
+		android:maxLines="1"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_below="@id/state"
+		android:id="@+id/details"
+		android:hint="Details. | Not Required."
+		android:maxLines="1"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_below="@id/details"
+		android:id="@+id/start_button"
+		android:text="Start."
+		android:onClick="onButtonClicked"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/start_button"
+		android:id="@+id/logs"
+		android:text="Haha logs go brrr."/>
+
+</RelativeLayout>
+
